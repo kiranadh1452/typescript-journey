@@ -13,6 +13,3 @@
     -   Type Assertions
     -   Literal Types
     -   Enums
-    -   Less common primitives
--   Narrowing
--   Functions
