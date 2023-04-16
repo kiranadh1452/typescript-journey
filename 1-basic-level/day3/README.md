@@ -1,0 +1,18 @@
+-   Narrowing
+-   Functions
+    -   Function signatures
+    -   Optional parameters
+    -   Default parameters
+    -   Rest parameters
+    -   Overloads
+    -   Function callbacks
+    -   Function callbacks with this
+    -   Function callbacks with generics
+    -   Function callbacks with overloads
+    -   Function callbacks with optional parameters
+    -   Function callbacks with default parameters
+    -   Function callbacks with rest parameters
+    -   Function callbacks with type assertions
+    -   Function callbacks with literal types
+    -   Function callbacks with enums
+    -   Function callbacks with less common primitives
