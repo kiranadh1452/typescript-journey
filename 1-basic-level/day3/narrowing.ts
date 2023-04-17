@@ -41,6 +41,8 @@ const printUserId_v1 = (id: string | number): void => {
  * 2. @Equality_Narrowing
  * 3. @The_in_operator_Narrowing
  * 4. @The_instanceof_operator_Narrowing
+ * 5. @Custom_Type_Predicates
+ * 6. @Never_Type
  */
 
 /**
@@ -117,4 +119,122 @@ const printUserId_v1 = (id: string | number): void => {
             console.log(`The id is ${user.id}`);
         }
     };
+}
+
+/**
+ * @The_instanceof_operator_Narrowing
+ * The instanceof operator can be used to check if a variable is an instance of a class or not
+ */
+{
+    class Student {
+        constructor(public roll: string, public name: string) {
+            this.roll = roll;
+            this.name = name;
+        }
+    }
+
+    class Teacher {
+        constructor(public id: string, public name: string) {
+            this.id = id;
+            this.name = name;
+        }
+    }
+
+    const printUserId_v5 = (user: Student | Teacher): void => {
+        if (user instanceof Student) {
+            console.log(`The id is ${user.roll}`);
+        } else {
+            console.log(`The id is ${user.id}`);
+        }
+    };
+}
+
+/**
+ * @Custom_Type_Predicates
+ * We can create our own type predicates to check if a variable is of a specific type or not
+ */
+{
+    type Student = {
+        roll: string;
+        name: string;
+    };
+
+    type Teacher = {
+        id: string;
+        name: string;
+    };
+
+    // The syntax for creating a type predicate is
+    const isStudent = (user: Student | Teacher): user is Student => {
+        return "roll" in user;
+    };
+
+    const printUserId_v6 = (user: Student | Teacher): void => {
+        if (isStudent(user)) {
+            console.log(`The id is ${user.roll}`);
+        } else {
+            console.log(`The id is ${user.id}`);
+        }
+    };
+
+    // Also, we can use the type predicate to filter from an array
+    const users: (Student | Teacher)[] = [
+        { roll: "1", name: "Messi Student 1" },
+        { id: "2", name: "Messi Teacher" },
+        { roll: "3", name: "Messi Student 2" },
+        { id: "4", name: "Messi Principal" },
+    ];
+
+    // from above array, we can filter out the students
+    const students: Student[] = users.filter(isStudent);
+
+    // For classes, we can use `this is Type`
+    // https://www.typescriptlang.org/docs/handbook/2/classes.html#this-based-type-guards
+}
+
+/**
+ * @never_type
+ * The never type is used to represent a type that never occurs
+ */
+{
+    type Student = {
+        kind: "student";
+        roll: string;
+        name: string;
+    };
+
+    type Teacher = {
+        kind: "teacher";
+        id: string;
+        name: string;
+    };
+
+    type NonTecherStaff = {
+        kind: "nonTeacherStaff";
+        id: string;
+        name: string;
+    };
+
+    type User = Student | Teacher;
+
+    const printUserId_v7 = (user: User): void => {
+        switch (user.kind) {
+            case "student":
+                console.log(`The id is ${user.roll}`);
+                break;
+
+            case "teacher":
+                console.log(`The id is ${user.id}`);
+                break;
+
+            default:
+                // This block is only executed if all possible cases are exhausted
+                const _exhaustiveCheck: never = user;
+        }
+    };
+
+    // In the above scenario, we have checks for "student" and "teacher" cases
+    // But if we add a new case, we will get a compiler error
+    // Try adding "NonTecherStaff" to the User type and see what happens
+    // i.e. type User = Student | Teacher | NonTecherStaff;
 }
