@@ -1,4 +1,11 @@
 -   Narrowing
+    - Types of narrowing
+        - Truthiness Narrowing
+        - Equality Narrowing
+        - The in operator Narrowing
+        - The instanceof operator Narrowing
+        - Custom Type Predicates
+        - Never Type
 -   Functions
     -   Function signatures
     -   Optional parameters
