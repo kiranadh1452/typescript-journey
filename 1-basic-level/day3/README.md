@@ -1,25 +1,19 @@
 -   Narrowing
-    - Types of narrowing
-        - Truthiness Narrowing
-        - Equality Narrowing
-        - The in operator Narrowing
-        - The instanceof operator Narrowing
-        - Custom Type Predicates
-        - Never Type
+    -   Types of narrowing
+        -   Truthiness Narrowing
+        -   Equality Narrowing
+        -   The in operator Narrowing
+        -   The instanceof operator Narrowing
+        -   Custom Type Predicates
+        -   Never Type
 -   Functions
-    -   Function signatures
-    -   Optional parameters
-    -   Default parameters
-    -   Rest parameters
-    -   Overloads
-    -   Function callbacks
-    -   Function callbacks with this
-    -   Function callbacks with generics
-    -   Function callbacks with overloads
-    -   Function callbacks with optional parameters
-    -   Function callbacks with default parameters
-    -   Function callbacks with rest parameters
-    -   Function callbacks with type assertions
-    -   Function callbacks with literal types
-    -   Function callbacks with enums
-    -   Function callbacks with less common primitives
+
+    -   Function type
+    -   Call signatures
+    -   Constructor signatures
+    -   Generic functions
+    -   Function Overloads
+    -   Object vs object
+    -   any vs unknown
+    -   Rest parameters and arguments
+    -   Parameter Destructuring
