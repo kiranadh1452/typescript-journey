@@ -11,7 +11,7 @@
         -   [Using keyof operator](keyOfOperator.ts#L1)
         -   [Using keyof operator with generics](keyOfOperator.ts#L18)
         -   [Using keyof operator with index signatures](keyOfOperator.ts#L37)
-    -   Typeof Type Operator - Using the `typeof` operator to create new types
+    -   [Typeof Type Operator and ReturnType](typeofOperator.ts) - Using the `typeof` operator to create new types
     -   Indexed Access Types - Using `Type['a']` syntax to access a subset of a type
     -   Conditional Types - Types which act like `if` statements in the type system
     -   Mapped Types - Creating types by mapping each property in an existing type
