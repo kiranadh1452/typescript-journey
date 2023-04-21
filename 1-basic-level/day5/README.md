@@ -13,6 +13,10 @@
         -   [Using keyof operator with index signatures](keyOfOperator.ts#L37)
     -   [Typeof Type Operator and ReturnType](typeofOperator.ts) - Using the `typeof` operator to create new types
     -   [Indexed Access Types](indexedAccessTypes.ts) - Using `Type['a']` syntax to access a subset of a type
-    -   Conditional Types - Types which act like `if` statements in the type system
+    -   [Conditional Types](conditionalTypes.ts) - Types which act like `if` statements in the type system
+        -   [Description](conditionalTypes.ts#L1)
+        -   [Conditional Types Constraints](conditionalTypes.ts#L29)
+        -   [Infering Within Conditional Types](conditionalTypes.ts#L41)
+        -   [Distributive Conditional Types](conditionalTypes.ts#L50)
     -   Mapped Types - Creating types by mapping each property in an existing type
     -   Template Literal Types - Mapped types which change properties via template literal strings
