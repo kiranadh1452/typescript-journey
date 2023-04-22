@@ -51,8 +51,10 @@ type D = Flatten2<boolean>;
  * @Distributive_Conditional_Types
  */
 type ToArray_V1<T> = T extends any ? T[] : never;
-type ToArray_V2<Type> = Type[];
+type ToArray_V2<T> = T[];
+type ToArray_V3<T> = [T] extends [any] ? T[] : never;
 
-// here, E would be string[] | number[] and F would be (string | number)[]
+// here, E would be string[] | number[] whereas F and G would be (string | number)[]
 type E = ToArray_V1<string | number>;
 type F = ToArray_V2<string | number>;
+type G = ToArray_V3<string | number>;
