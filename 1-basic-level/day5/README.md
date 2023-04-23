@@ -18,5 +18,8 @@
         -   [Conditional Types Constraints](conditionalTypes.ts#L29)
         -   [Infering Within Conditional Types](conditionalTypes.ts#L41)
         -   [Distributive Conditional Types](conditionalTypes.ts#L50)
-    -   Mapped Types - Creating types by mapping each property in an existing type
+    -   [Mapped Types](mappedTypes.ts) - Creating types by mapping each property in an existing type
+        -   [Description](mappedTypes.ts#L1)
+        -   [Mapping Modifiers](mappedTypes.ts#L20)
+        -   [Key Remapping via as](mappedTypes.ts#L46)
     -   Template Literal Types - Mapped types which change properties via template literal strings
