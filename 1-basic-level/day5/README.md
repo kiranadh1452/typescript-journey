@@ -22,4 +22,7 @@
         -   [Description](mappedTypes.ts#L1)
         -   [Mapping Modifiers](mappedTypes.ts#L20)
         -   [Key Remapping via as](mappedTypes.ts#L46)
-    -   Template Literal Types - Mapped types which change properties via template literal strings
+    -   [Template Literal Types](templateLiteralTypes.ts) - Mapped types which change properties via template literal strings
+        -   [String Unions In Types](templateLiteralTypes.ts#L1)
+        -   [Inference with Template Literals](templateLiteralTypes.ts#L39)
+        -   [Intrinsic String Manipulation Types](templateLiteralTypes.ts#L66)
