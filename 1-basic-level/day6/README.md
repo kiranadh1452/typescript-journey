@@ -19,14 +19,16 @@
     -   protected
     -   private
 
-[Example 3]()
+[Example 3](classes-example-3.ts)
 
 -   Static Members
 -   Special Static Names
--   Why No Static Classes?
--   static Blocks in Classes
+-   Static Blocks in Classes
 -   Generic Classes
 -   Type Parameters in Static Members
+
+[Example 4]()
+
 -   this at Runtime in Classes
 -   Arrow Functions
 -   this parameters
