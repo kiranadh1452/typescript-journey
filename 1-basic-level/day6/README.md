@@ -1,14 +1,14 @@
 ## Topics Covered : Classes in TS
 
--   Class Members
--   Fields
--   readonly
--   Constructors
--   Methods
--   Getters / Setters
+-   Class Members.
+-   Fields.
+-   readonly.
+-   Constructors.
+-   Methods.
+-   Getters / Setters.
+-   implements Clauses
 -   Index Signatures
 -   Class Heritage
--   implements Clauses
 -   extends Clauses
 -   Member Visibility
 -   public
