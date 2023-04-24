@@ -7,13 +7,12 @@
 -   Methods.
 -   Getters / Setters.
 -   implements Clauses
--   Index Signatures
 -   Class Heritage
--   extends Clauses
+    -   extends Clauses
 -   Member Visibility
--   public
--   protected
--   private
+    -   public
+    -   protected
+    -   private
 -   Static Members
 -   Special Static Names
 -   Why No Static Classes?
