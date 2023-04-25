@@ -27,7 +27,7 @@
 -   Generic Classes
 -   Type Parameters in Static Members
 
-[Example 4]()
+[Example 4](classes-example-4.ts)
 
 -   this at Runtime in Classes
 -   Arrow Functions
