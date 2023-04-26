@@ -32,8 +32,9 @@
 -   this at Runtime in Classes
 -   Arrow Functions
 -   this parameters
--   this Types
--   this-based type guards
+
+[Example 5](classes-example-5.ts)
+
 -   Parameter Properties
 -   Class Expressions
 -   abstract Classes and Members
