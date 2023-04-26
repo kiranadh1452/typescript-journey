@@ -4,3 +4,4 @@
 
 -   [ES Module Syntax](./1-es_modules/)
 -   [CommonJS Module Syntax without exports](./2-commonjs_modules/example1)
+-   [CommonJS Module Syntax with exports](./2-commonjs_modules/example2)
