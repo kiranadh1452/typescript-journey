@@ -37,6 +37,8 @@
 
 -   Parameter Properties
 -   Class Expressions
--   abstract Classes and Members
+
+[Example 6](classes-example-6.ts)
+
+-   Abstract Classes and Members
 -   Abstract Construct Signatures
--   Relationships Between Classes
