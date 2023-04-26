@@ -1,6 +1,6 @@
-// Requring in this way would auto grant all the variables in moduleHolder
 const { Messi, Author, normalVariable } = require("./moduleHolder.js");
 
+// note that the type User is declared in the global scope of the moduleHolder.ts file, hence we can use it here
 const testFunction = (): void => {
     console.log(Messi);
     console.log(Author);
