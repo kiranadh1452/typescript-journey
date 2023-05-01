@@ -4,3 +4,4 @@ Declaration files are those with the extension `.d.ts`. They are used to describ
 
 -   [Object With Properties](./object-with-properties/)
 -   [Overloaded Function](./overloaded-function/)
+-   [Organizing Types](./3-organizing-types/)
