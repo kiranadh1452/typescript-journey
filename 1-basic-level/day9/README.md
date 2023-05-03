@@ -6,3 +6,4 @@ Declaration files are those with the extension `.d.ts`. They are used to describ
 -   [Overloaded Function](./2-overloaded-function/)
 -   [Organizing Types](./3-organizing-types/)
 -   [Classes](./4-classes/)
+-   [Global variable and functions](./5-global-variable-and-function/)
