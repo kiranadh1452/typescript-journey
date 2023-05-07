@@ -10,3 +10,10 @@
     ```bash
     tsc -p ./src/tsconfig.json
     ```
+
+## Examples
+
+-   [Example 1](./example-1/README.md)
+    -   In this example, we have a simple express app that returns a same message for all the routes.
+    -   There is a single file that needs to be compiled.
+    -   This example uses express and body-parser in the server file.
