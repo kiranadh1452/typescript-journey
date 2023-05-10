@@ -17,3 +17,8 @@
     -   In this example, we have a simple express app that returns a same message for all the routes.
     -   There is a single file that needs to be compiled.
     -   This example uses express and body-parser in the server file.
+-   [Example 2](./example-2/README.md)
+    -   In this example, we have a modified app than the previous example.
+    -   This contains a router called "TestRoute" imported from another file. (attached to '/test' endpoint)
+    -   There are multiple files that needs to be compiled.
+    -   Also, there are certain typescript files that are not to be compiled.
