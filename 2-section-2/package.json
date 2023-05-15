@@ -1,0 +1,33 @@
+{
+    "name": "typescript-express-todo-app",
+    "version": "0.0.1",
+    "description": "Simple ToDo app",
+    "main": "build/app.js",
+    "scripts": {
+        "copy-config": "mkdir -p ./build/src/ && cp -r ./src/config ./build/src/",
+        "start": "node build/app.js",
+        "build": "npx tsc && npm run copy-config"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kiranadh1452/typescript-journey.git"
+    },
+    "author": "Kiran Adhikari",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/kiranadh1452/typescript-journey/issues"
+    },
+    "homepage": "https://github.com/kiranadh1452/typescript-journey/blob/master/2-section-2/README.md",
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.17",
+        "@types/node": "^20.1.4",
+        "concurrently": "^8.0.1",
+        "nodemon": "^2.0.22",
+        "typescript": "^5.0.4"
+    }
+}
