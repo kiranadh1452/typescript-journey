@@ -8,5 +8,5 @@ Name of the application: **typescript-express-todo-app**
 Follow through the commits to understand the changes. Use the commit hash below as the start point for this section.
 
     ```bash
-      git checkout 4c441a003aa2efe909f552914ea52cbb11e18d41
+      git checkout 96abf51a7fa9a950072a1d2b026a00a8a49a008b
     ```
