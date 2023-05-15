@@ -3,6 +3,9 @@ import * as dotenv from "dotenv";
 import bodyParser from "body-parser";
 import express, { Express, Request, Response, NextFunction } from "express";
 
+// import routes
+import UserRouter from "./src/v1/users/router.js";
+
 // set up dotenv, to allow us to use environment variables
 dotenv.config({
     path: "./src/config/config.env",
@@ -22,6 +25,8 @@ app.get("/", (req: Request, res: Response, next: NextFunction) => {
         message: "Express app is working",
     });
 });
+
+app.use("/api/v1/users", UserRouter);
 
 // Sample route
 app.use("*", (req: Request, res: Response, next: NextFunction) => {
