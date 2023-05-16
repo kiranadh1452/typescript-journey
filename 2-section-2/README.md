@@ -11,6 +11,12 @@ Follow through the commits to understand the changes. Use the commit hash below 
       git checkout 96abf51a7fa9a950072a1d2b026a00a8a49a008b
     ```
 
+To go back to the previous state, run this command
+
+    ```bash
+      git switch -
+    ```
+
 ## How to run the application ?
 
 -   Install the dependencies
